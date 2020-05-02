@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Chefs N Dishes";
+}
+@model List<Dish>;
+
+<div class="text-center">
+    <h1 class="display-4 mt-2">Chefs N Dishes</h1>
+    <span>
+      <a href="/">Chefs</a> | Dishes
+    </span>
+    <h3 class="my-3">Check out our roster of Chefs!</h3>
+    <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th class="fluid">Name</th>
+            <th class="fixed">Chef</th>
+            <th class="fluid">Tastiness</th>
+            <th class="fluid">Calories</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+             @foreach (Dish currentDish in Model)
+            {
+              <tr>
+                  <td>@currentDish.Name</td>
+                  <td>@currentDish.Chef.Name</td>
+                  <td>@currentDish.Tastiness</td>
+                  <td>@currentDish.Calories</td>
+              </tr>
+            }
+          
+    </tbody>
+</table>
+
+
+    <a href="/newdish" class="btn btn-primary my-2">Add a Dish!</a>
+</div>

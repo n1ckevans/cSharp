@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Activity";
+}
+
+<header>
+   <h1 class="text-center d-i-block">Dojo Activity Center</h1>
+  <a href="/dashboard" class="btn btn-primary d-i-block">Home</a>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+  
+</header>
+
+<div class="container mt-5">
+  <h1>@ViewBag.CurrentAct.Title</h1>
+
+  <h2>Event Coordinator: @ViewBag.CurrentAct.Creator.FirstName</h2>
+  <h2>Description: @ViewBag.CurrentAct.Description</h2>
+  <h2>Participants:</h2>
+    <ul class="list-group">
+      
+    @foreach (var currentGuest in ViewBag.Guests)
+      {
+      <li class="list-group-item">@currentGuest.Attendee.FirstName</li>
+      } 
+    
+    </ul>
+
+
+     @if(@ViewBag.User == @ViewBag.CurrentAct.Creator)
+                 {
+                   <a class="btn btn-danger" href="/activity/@ViewBag.CurrentAct.ActivityId/delete">Delete</a>
+                 }
+
+      @if(@ViewBag.User != @ViewBag.CurrentAct.Creator)
+      {
+        bool isguest = false;
+
+        for (var i = 0; i < @ViewBag.Guests.Count; i++)
+        {
+          if (@ViewBag.CurrentAct.Events[i].UserId == @ViewBag.User.UserId)
+                        {
+                          isguest = true;
+                          break;
+                        }
+        }
+
+          if (isguest == false)
+                  {
+                    <a class="btn btn-primary" href="/activity/@ViewBag.CurrentAct.ActivityId/join">Join</a>
+                  }
+                    
+                  else
+                  {
+                      <a class="btn btn-primary" href="/activity/@ViewBag.CurrentAct.ActivityId/leave">Leave</a>
+                        
+                       
+                    }
+
+
+      }
+
+
+</div>

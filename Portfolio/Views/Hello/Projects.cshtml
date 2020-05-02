@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+   <nav class="navbar navbar-expand navbar-dark rounded bg-primary">
+    <div class="collapse navbar-collapse order-0 dual-collapse2" id="navbarSupportedContent">
+      
+      
+      
+      <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/wall">Projects</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/profile/{{user.id}}">Contact</a>
+              </li>
+        
+      </ul>
+
+    </div>
+   </nav>
+
+<h1 class="text-center">Here are some Projects of mine!</h1>
+
+@{
+  var SkateTricks = new List<string>
+    {
+      "Ollie",
+      "Nollie",
+      "Kickflip",
+      "Heelflip",
+      "Caballerial",
+      "Smith Grind",
+      "Krooked Grind"
+    };
+
+    foreach (var trick in SkateTricks)
+    {
+      <div>
+            <p>@trick</p>
+            
+       </div>
+    }
+}
+
+
+ <div class="card-deck ">
+      
+      <div style="background-color: transparent"  class="card   text-white">
+        <div class="card-body text-center">
+          <div>
+            <h1>Pi-Hole</h1>
+            <img src="~/img/pihole.png">
+             <p>
+              This is a DNS Sinkhole to block ad-traffic
+            </p>
+          </div>
+          <div>
+          <h1>Retropie</h1>
+          <img src="~/img/retropie.jpeg">
+            <p>
+              This is an Emulation Station for emulating classic videogames
+            </p>
+          </div>
+          <div>
+          <h1>Headphone 3.5mm Jack Repair</h1>
+          <img src="~/img/headphones.png">
+            <p>
+              Replaced broken headhpone jack by removing faulty jack and soldereding a new one
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+
+      
+</body>
+</html>

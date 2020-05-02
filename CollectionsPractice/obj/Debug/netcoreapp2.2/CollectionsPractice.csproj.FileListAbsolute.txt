@@ -1,0 +1,11 @@
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/bin/Debug/netcoreapp2.2/CollectionsPractice.deps.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/bin/Debug/netcoreapp2.2/CollectionsPractice.runtimeconfig.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/bin/Debug/netcoreapp2.2/CollectionsPractice.runtimeconfig.dev.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/bin/Debug/netcoreapp2.2/CollectionsPractice.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/bin/Debug/netcoreapp2.2/CollectionsPractice.pdb
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.csprojAssemblyReference.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.csproj.CoreCompileInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.AssemblyInfoInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.AssemblyInfo.cs
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/CollectionsPractice/obj/Debug/netcoreapp2.2/CollectionsPractice.pdb

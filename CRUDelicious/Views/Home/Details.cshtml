@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "CRUDelicious";
+}
+@model Dish
+
+<a href="/" class="btn text-left mx-2 my-2">Home</a>
+
+
+<div class="card mx-auto text-center mb-3" style="width: 25rem;">
+  <div class="card-header">
+    <h5 class="card-title">
+      @Model.Name
+    </h5>
+  </div>
+<div class="card-body">
+  <h6 class="card-subtitle mb-2 text-muted">by: @Model.Chef</h6>
+  <p class="card-text">
+    @Model.Description
+  </p>
+
+   <a class="btn btn-danger mx-2" asp-controller="Home" asp-action="Edit" asp-route-id="@Model.DishId">Edit Dish</a>
+   <a class="btn btn-danger mx-2" asp-controller="Home" asp-action="Delete" asp-route-id="@Model.DishId">Delete</a>
+</div>

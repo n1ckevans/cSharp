@@ -1,0 +1,21 @@
+@using ViewModelFun.Models
+@model List<User>
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>View Model Fun</title>
+</head>
+<body>
+  <h1>
+    Here are some Users
+  </h1>
+  @foreach(var person in Model)
+  {
+    <a href="/@person.FirstName">@person.FirstName @person.LastName</a>
+  }
+</body>
+</html>

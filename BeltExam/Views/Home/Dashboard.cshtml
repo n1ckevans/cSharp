@@ -1,0 +1,92 @@
+@{
+    ViewData["Title"] = "Home";
+}
+<header>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+
+  <h1 class="text-center d-i-block">Welcome @ViewBag.User.FirstName!</h1>
+  
+</header>
+
+ <div class="container mt-5">
+
+           
+          <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th class="fixed">Activity</th>
+            <th class="fixed">Date and Time</th>
+            <th class="fixed">Duration</th>
+            <th class="fixed">Event Coordinator</th>
+            <th class="fixed">Number of Participants</th>
+            <th class="fixed">Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+         
+        
+             @foreach (BeltExam.Models.Activity currentAct in ViewBag.AllActs)
+            {
+                if (@currentAct.Date < DateTime.Now)
+                {
+                  continue;
+                }
+
+
+            
+              <tr>
+                  <td class="text-left"><a href="/activity/@currentAct.ActivityId">@currentAct.Title<a></td>
+                  <td class="text-left">@currentAct.Date.ToShortDateString() at  @currentAct.Time.ToShortTimeString()</td>
+                  <td class="text-left">@currentAct.Duration @currentAct.Length</td>
+                  <td class="text-left">@currentAct.Creator.FirstName</td>
+
+               
+
+                  <td class="text-left">@currentAct.Events.Count</td>
+
+                    <td class="text-left">
+                      
+                      
+                          @if(@ViewBag.User == currentAct.Creator)
+                            {
+                            <a class="btn btn-danger" href="/dashboard/@currentAct.ActivityId/delete">Delete</a>
+                            }
+
+                          @if(@ViewBag.User != currentAct.Creator)
+                          {
+                            bool isguest = false;
+
+                            for (var i = 0; i < currentAct.Events.Count; i++)
+                            {
+                              if (currentAct.Events[i].UserId == @ViewBag.User.UserId)
+                              {
+                              isguest = true;
+                              break;
+                              }
+                            }
+
+                            @if (isguest == false)
+                                    {
+                                      <a class="btn btn-primary" href="/dashboard/@currentAct.ActivityId/join">Join</a>
+                                    }
+                                      
+                                    else
+                                    {
+                                        <a class="btn btn-primary" href="/dashboard/@currentAct.ActivityId/leave">Leave</a>
+                                          
+                                        
+                                      }
+                          }
+                    
+                    </td>
+              
+            </tr>
+            }
+          
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="/new">Add New Activity!</a>
+
+</div>

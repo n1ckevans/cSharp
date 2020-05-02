@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Survey";
+}
+@model Survey
+<h1><b>Dojo Survey</b></h1>
+    <form asp-action ="Result" asp-controller="Home" method="post">
+
+        <label asp-for="Name">Your Name:</label>
+        <input class="u-full-width" type="text" placeholder="John Wayne" asp-for="Name"><br>
+        <span asp-validation-for="Name"></span>
+    
+        <label asp-for="Locations">Dojo Location:</label>
+        <select class="u-full-width" asp-for="Locations">
+            <option disabled selected> -- Select your Location-- </option>
+            <option value="san jose">San Jose, CA</option>
+            <option value="seattle">Seattle, WA</option>
+            <option value="Los Angele">Los Angeles, CA</option>
+            <option value="berkeley">Berkeley, CA.</option>
+            <option value="Orange County">Orange County, CA</option>
+        </select><br>
+        <span asp-validation-for="Locations"></span>
+
+        <label asp-for="Languages">Favorite Language:</label>
+        <select class="u-full-width" asp-for="Languages">
+            <option disabled selected> -- Select your Favorite Language -- </option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="cplusplus">C++</option>
+            <option value="csharp">C#</option>
+            <option value="php">PHP</option>
+          
+        </select><br>
+        <span asp-validation-for="Languages"></span>
+        <label asp-for="Comments">Comment (Optional)</label>
+            <textarea class="u-full-width" placeholder="Leave a comment!" asp-for="Comments"></textarea><br>
+        <span asp-validation-for="Comments"></span>
+        <input class="button-primary" type="submit"  value="Submit">
+    </form>
+
+           
+    </div>

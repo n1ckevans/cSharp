@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Dojodachi";
+}
+<div class="my-2 text-center">
+<p class="d-inline-block mx-2">Fullness: @ViewBag.Dojodachi.Fullness</p>
+<p class="d-inline-block mx-2">Happiness: @ViewBag.Dojodachi.Happiness</p>
+<p class="d-inline-block mx-2">Meals: @ViewBag.Dojodachi.Meals</p>
+<p class="d-inline-block mx-2">Energy: @ViewBag.Dojodachi.Energy</p>
+</div>
+
+
+<div >
+  <img class="mx-auto my-2 d-block" src="~/tom.gif">
+      <div class="text-center my-2 alert alert-secondary">
+            @{
+                if(ViewBag.Reaction == "")
+                {
+                    @ViewBag.Message;
+                }
+                else
+                {
+                    @ViewBag.Reaction;
+                }
+            }
+        </div>
+
+</div>
+
+   @{
+            if(ViewBag.Status == "active")
+            {
+              <div class="text-center">
+                <form action="/action" method="post" class="d-inline-block mx-1">
+                   <input type="submit" value="Feed" name="action" class="btn btn-default btn-play"></input>
+                </form>
+                <form action="/action" method="post" class="d-inline-block mx-1">
+                    <input type="submit" value="Play" name="action" class="btn btn-default btn-play"></input>
+                </form>
+                 <form action="/action" method="post" class="d-inline-block mx-1">
+                     <input type="submit" value="Work" name="action" class="btn btn-default btn-play"></input>
+                </form>
+                 <form action="/action" method="post" class="d-inline-block mx-1">
+                    <input type="submit" value="Sleep" name="action" class="btn btn-default btn-play"></input>
+                </form>
+              </div>
+            }
+
+            else if(ViewBag.Status == "Gameover")
+            {
+                <div class="text-center">
+                  <form action="/reset" method="post" class="d-inline-block mx-1">
+                     <input type="submit" value="Play again?" name="Reset" class="btn btn-default btn-play"></input>
+                  </form>
+                </div>
+            }
+        }
+
+

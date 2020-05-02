@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = "New Activity";
+}
+
+
+
+<header>
+  <h1 class="text-center d-i-block">Dojo Activity Center</h1>
+  <a href="/dashboard" class="btn btn-primary d-i-block">Home</a>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+  
+  
+</header>
+
+@model Activity
+
+<h2 class="text-center d-i-block">Create an Activity!</h2>
+
+
+<form asp-controller="Home" asp-action="NewAct">
+
+  <div class="form-group">
+    <label asp-for="Title">Title</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Title"></span>
+    <input class="form-control" asp-for="Title" type="text">
+  </div>
+  
+  <div class="form-group">
+    <label asp-for="Time">Time</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Time"></span>
+    <input class="form-control" asp-for="Time" type="time">
+  </div>
+          
+  <div class="form-group">
+    <label asp-for="Date">Date</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Date"></span>
+    <input type="date" class="form-control" asp-for="Date">
+  </div>
+
+   <div class="form-group">
+    <label asp-for="Duration">Duration</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Duration"></span>
+    <input class="form-control" asp-for="Duration" type="number"> 
+  </div>
+
+   <div class="form-group">
+    <label asp-for="Length">Length</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Length"></span>
+    <select asp-for="Length">
+       <option value="Days">Days</option>
+       <option value="Hours">Hours</option>
+       <option value="Minutes">Minutes</option>          
+    </select> 
+  </div>
+
+
+       
+
+
+   <div class="form-group">
+    <label asp-for="Description">Description</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Description"></span>
+    <input class="form-control" asp-for="Description" type="text">
+  </div>
+  
+  <button class="btn btn-info" type="submit">Create</button>
+</form>

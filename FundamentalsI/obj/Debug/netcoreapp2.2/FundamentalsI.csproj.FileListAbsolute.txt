@@ -1,0 +1,11 @@
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/bin/Debug/netcoreapp2.2/FundamentalsI.deps.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/bin/Debug/netcoreapp2.2/FundamentalsI.runtimeconfig.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/bin/Debug/netcoreapp2.2/FundamentalsI.runtimeconfig.dev.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/bin/Debug/netcoreapp2.2/FundamentalsI.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/bin/Debug/netcoreapp2.2/FundamentalsI.pdb
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.csprojAssemblyReference.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.csproj.CoreCompileInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.AssemblyInfoInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.AssemblyInfo.cs
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/FundamentalsI/obj/Debug/netcoreapp2.2/FundamentalsI.pdb

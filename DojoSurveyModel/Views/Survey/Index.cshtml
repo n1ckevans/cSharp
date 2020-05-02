@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Survey</title>
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+   
+
+
+ <div class="card-deck ">
+
+
+      
+      <div style="background-color: transparent"  class="card   text-white">
+        <div class="card-body text-center">
+       <h1>Dojo Survey</h1>
+        <form action="/results" method="post">
+            <p><label></label>Name: </label>
+            <input type="text" name="Name"></p>
+            <p><label>Dojo Location: </label>
+            <select name="Location">
+                <option value=""></option>
+                <option value="Seattle">Seattle</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Washington D.C">Orange County</option>
+                <option value="Berkeley">Berkeley</option>
+            </select></p>
+            <p><label>Favorite Language: </label>
+            <select name="Language">
+                <option value=""></option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="C#">C#</option>
+            </select></p>
+            <p><label>Comment (optional): </label></p>
+            <p><textarea name="Comment"></textarea>
+            <p><input type="submit" name="submit" value="Submit"></p>
+        </form>
+        </div>
+    
+       </div>
+      </div>  
+    </div>
+</body>
+</html>

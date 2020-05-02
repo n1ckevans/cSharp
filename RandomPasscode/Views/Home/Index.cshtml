@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Random Passcode Generator";
+}
+<h1 class="text-center">Random Passcode (passcode #@ViewBag.Count)</h1>
+
+
+
+<h2 class="text-center border">
+  @ViewBag.Pass
+</h2>
+
+<form class="text-center" action="generate" method="post">
+  <input type="submit" value="Generate">
+</form>

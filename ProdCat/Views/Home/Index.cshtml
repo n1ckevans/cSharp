@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Products and Categories";
+}
+
+
+<div class="text-center">
+    <span class="my-3">
+      Products | <a href="/categories">Categories</a>
+    </span>
+      <div class="container mt-5">
+    <div class="row">
+        <div class="col-md">
+            <partial name="_NewProduct"></partial>
+        </div>
+        <div class="col-md">
+            <partial name="_Products"></partial>
+        </div>
+    </div>
+</div>

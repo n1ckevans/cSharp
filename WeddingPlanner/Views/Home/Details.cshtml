@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Wedding Details";
+}
+
+<header>
+  <a href="/dashboard" class="btn btn-primary d-i-block">Dashboard</a>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+  <h1 class="text-center d-i-block">@ViewBag.CurrentWed.Names()'s Wedding</h1>
+  
+</header>
+
+<div class="container mt-5">
+
+  <h2>Date: @ViewBag.CurrentWed.Date.ToShortDateString()</h2>
+  <h2>Location: @ViewBag.CurrentWed.Address</h2>
+  <h2>Guests:</h2>
+    <ul class="list-group">
+         
+    @foreach (var currentGuest in ViewBag.Guests)
+      {
+      <li class="list-group-item">@currentGuest.Attendee.FullName()</li>
+      } 
+    
+    </ul>
+
+
+
+</div>

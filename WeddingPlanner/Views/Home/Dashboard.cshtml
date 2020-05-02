@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<header>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+  <h1 class="text-center d-i-block">Welcome to the Wedding Planner</h1>
+  
+</header>
+
+
+  
+      <div class="container mt-5">
+
+           
+          <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th class="fixed">Wedding</th>
+            <th class="fixed">Date</th>
+            <th class="fixed">Guests</th>
+            <th class="fixed">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+         
+        
+             @foreach (Wedding currentWedding in ViewBag.AllWeds)
+            {
+            
+              <tr>
+                  <td class="text-left"><a href="/@currentWedding.WeddingId">@currentWedding.Names()<a></td>
+                  <td class="text-left">@currentWedding.Date.ToShortDateString()</td>
+                  <td class="text-left">@currentWedding.Guests.Count</td>
+                  <td class="text-left">
+
+                 @if(@ViewBag.User == @currentWedding.Creator)
+                 {
+                   <a href="/delete/@currentWedding.WeddingId/">Delete</a>
+                 }
+                 
+
+                 @if (@ViewBag.User != @currentWedding.Creator)
+                 {  
+                      bool isguest = false;
+
+                      for(var i = 0; i < @currentWedding.Guests.Count; i++)
+                      {
+                        if (@currentWedding.Guests[i].UserId == @ViewBag.User.UserId)
+                        {
+                          isguest = true;
+                          break;
+                        }
+
+                      }
+
+                  if (isguest == false)
+                  {
+                    <a href="/rsvp/@currentWedding.WeddingId/">RSVP</a>
+                  }
+                    
+                  else
+                  {
+                      <a href="/unrsvp/@currentWedding.WeddingId/">Un-RSVP</a>
+                        
+                       
+                    }
+                 }
+
+               
+                    
+                    
+                    </td>
+              </tr>
+            
+            }
+          
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="/wedding">Add Wedding</a>
+
+</div>

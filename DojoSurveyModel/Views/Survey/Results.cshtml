@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Results</title>
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+   
+
+
+ <div class="card-deck ">
+<div style="background-color: transparent"  class="card   text-white">
+        <div class="card-body text-center">
+<h1>Dojo Survey - Results</h1>
+
+@{
+ <p><label for="Name">Name:  </label> </p>
+        <p><label for="Location">Dojo Location:  </label> @ViewBag.name</p>
+        <p><label for="Language">Favorite Language:  </label> @ViewBag.fav_lang</p>
+        <p><label for="Comment">Comment (optional):  </label> @ViewBag.comments</p>
+        <button><a href="/">Back</a></button>
+}
+
+
+       
+        
+        </div>  
+        </div>
+      
+      </div>  
+    </div>
+
+
+
+        
+  
+</body>
+</html>

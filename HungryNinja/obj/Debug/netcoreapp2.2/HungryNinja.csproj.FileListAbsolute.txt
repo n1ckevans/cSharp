@@ -1,0 +1,11 @@
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.deps.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.runtimeconfig.dev.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/bin/Debug/netcoreapp2.2/HungryNinja.pdb
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csprojAssemblyReference.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.csproj.CoreCompileInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfoInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.AssemblyInfo.cs
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/HungryNinja/obj/Debug/netcoreapp2.2/HungryNinja.pdb

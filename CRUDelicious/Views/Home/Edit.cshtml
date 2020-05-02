@@ -1,0 +1,55 @@
+@model Dish
+@{
+    ViewData["Title"] = "CRUDelicious";
+}
+
+
+<a href="/" class="btn text-left mx-2 my-2">Home</a>
+
+<h2 class="text-center">
+  Edit Dish @Model.Name
+</h2>
+
+<form asp-controller="Home" asp-action="Update" asp-route-id="@Model.DishId">
+
+
+  <div class="form-group">
+    <b><label asp-for="Name"></label></b>
+    <span class="text-danger font-weight-bold" asp-validation-for="Name"></span>
+    <input class="form-control" asp-for="Name">
+  </div>
+
+   <div class="form-group">
+    <b><label asp-for="Chef"></label></b>
+    <span class="text-danger font-weight-bold" asp-validation-for="Chef"></span>
+    <input class="form-control" asp-for="Chef">
+  </div>
+
+   <div class="form-group">
+    <b><label asp-for="Tastiness"></label></b>
+    <span class="text-danger font-weight-bold" asp-validation-for="Tastiness"></span>
+    <select asp-for="Tastiness">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+   <div class="form-group">
+    <b><label asp-for="Calories"></label></b>
+    <span class="text-danger font-weight-bold" asp-validation-for="Calories"></span>
+    <input class="form-control" asp-for="Calories">
+  </div>
+  
+   <div class="form-group">
+    <b><label asp-for="Description"></label></b>
+    <span class="text-danger font-weight-bold" asp-validation-for="Description"></span>
+    <textarea class="form-control" asp-for="Description"></textarea>
+  </div>
+
+  
+  <button class="btn btn-info" type="submit">Save</button>
+  <a class="btn btn-danger" href="/">Cancel</a>
+</form>

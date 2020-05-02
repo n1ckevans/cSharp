@@ -1,0 +1,11 @@
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.deps.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.runtimeconfig.dev.json
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/bin/Debug/netcoreapp2.2/Puzzles.pdb
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csprojAssemblyReference.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.csproj.CoreCompileInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfoInputs.cache
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.AssemblyInfo.cs
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.dll
+/Users/mackenzieslattery/Desktop/coding/coding-dojo/c#_stack/Puzzles/obj/Debug/netcoreapp2.2/Puzzles.pdb

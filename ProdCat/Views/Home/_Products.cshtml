@@ -1,0 +1,15 @@
+<h3 class="text-center">Existing Products</h3>
+
+
+
+
+<ul class="list-group">
+  @foreach (Product prod in ViewBag.AllProds)
+{
+  <li class="list-group-item"><a href="/@prod.ProductId">@prod.Name</a></li>
+  
+}
+
+</ul>
+
+

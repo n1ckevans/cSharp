@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+   <nav class="navbar navbar-expand navbar-dark rounded bg-primary">
+    <div class="collapse navbar-collapse order-0 dual-collapse2" id="navbarSupportedContent">
+      
+      
+      
+      <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/wall">Projects</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/profile/{{user.id}}">Contact</a>
+              </li>
+        
+      </ul>
+
+    </div>
+   </nav>
+
+<h1 class="text-center">About Me</h1>
+
+ <h1>ASP.NET Mvc Clock!</h1>
+          @{ DateTime CurrentTime = DateTime.Now; }  
+        <div>
+            <p>The current time and date:</p> 
+        </div>
+        <div> 
+            <p>Date: @CurrentTime.ToString("MMM d, yyy") </p>
+            <p>Time: @CurrentTime.ToString("h:mm tt") </p>
+        </div>
+
+
+ <div class="card-deck ">
+
+
+      
+      <div style="background-color: transparent"  class="card   text-white">
+        <div class="card-body text-center">
+       <h1>Dojo Survey</h1>
+        <form action="results" method="post">
+            <p><label for="name">Name: </label>
+            <input type="text" name="name"></p>
+            <p><label for="location">Dojo Location: </label>
+            <select name="dojo_location">
+                <option value=""></option>
+                <option value="Seattle">Seattle</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Washington D.C">Orange County</option>
+                <option value="Berkeley">Berkeley</option>
+            </select></p>
+            <p><label for="fav_lang">Favorite Language: </label>
+            <select name="fav_lang">
+                <option value=""></option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="C#">C#</option>
+            </select></p>
+            <p><label for="comment">Comment (optional): </label></p>
+            <p><textarea name="comment"></textarea>
+            <p><input type="submit" name="submit" value="Submit"></p>
+        </form>
+        </div>
+    
+      
+      <div style="background-color: transparent"  class="card   text-white">
+        <div class="card-body text-center">
+         
+          <h1>Vin Scully</h1>
+           <img src="~/img/vin.jpeg">
+          <h2>It's time for Dodger Baseball!</h2>
+          
+        </div>
+      </div>
+
+      <div style="background-color: transparent"  class="card text-white">
+        <div class="card-body text-center">
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit consequat purus sagittis, cras tempor dis congue aliquam urna malesuada erat. Augue porttitor suspendisse pellentesque platea ornare sodales diam sapien, commodo ridiculus hac aliquet posuere tincidunt lobortis facilisi dis, himenaeos quis nullam dignissim mi maecenas quam. Vivamus sociis diam rutrum integer vitae erat pharetra suspendisse suscipit ligula, nisi conubia nulla dapibus quisque imperdiet sed velit turpis nibh, semper convallis tempus malesuada faucibus himenaeos dignissim molestie volutpat.</p>
+          
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "CRUDelicious";
+}
+<a href="/" class="btn text-left mx-2 my-2">Home</a>
+
+<div class="text-center">
+    <h1 class="display-4">Add a new Dish!</h1>
+    
+ @model Dish
+    <form asp-action="Create" asp-controller="Home" method="post">
+        <div class="d-block my-2">
+          <span asp-validation-for="Name"></span>
+          <label asp-for="Name"></label>
+          <input asp-for="Name">
+        </div>
+        <div class="d-block my-2">
+          <span asp-validation-for="Chef"></span>
+          <label asp-for="Chef"></label>
+          <input asp-for="Chef">
+        </div>
+        <div class="d-block my-2">
+          
+
+          <span asp-validation-for="Tastiness"></span>
+          <label asp-for="Tastiness"></label>
+          <select asp-for="Tastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="d-block my-2">
+          <span asp-validation-for="Calories"></span>
+          <label asp-for="Calories"></label>
+          <input asp-for="Calories">
+        </div>
+        <div class="d-block my-2">
+          <span asp-validation-for="Description"></span>
+          <label asp-for="Description"></label>
+          <textarea asp-for="Description"></textarea>
+        </div>
+        <div class="d-block my-2">
+          <button class="btn btn-info" type="submit">Add Dish</button>
+        </div>  
+    </form>
+
+
+
+</div>

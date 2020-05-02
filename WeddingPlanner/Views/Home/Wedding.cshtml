@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Add A Wedding";
+}
+
+@model Wedding
+
+<header>
+  <a href="/dashboard" class="btn btn-primary d-i-block">Dashboard</a>
+  <a href="/logout" class="btn btn-primary d-i-block">Logout</a>
+  <h1 class="text-center d-i-block">Plan Your Wedding</h1>
+  
+</header>
+
+
+
+
+<form asp-controller="Home" asp-action="NewWed">
+
+  <div class="form-group">
+    <label asp-for="WedderOne">Wedder One</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="WedderOne"></span>
+    <input class="form-control" asp-for="WedderOne">
+  </div>
+  
+  <div class="form-group">
+    <label asp-for="WedderTwo">Wedder Two</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="WedderTwo"></span>
+    <input class="form-control" asp-for="WedderTwo">
+  </div>
+          
+  <div class="form-group">
+    <label asp-for="Date">Date</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Date"></span>
+    <input type="date" class="form-control" asp-for="Date">
+  </div>
+
+   <div class="form-group">
+    <label asp-for="Address">Address</label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Address"></span>
+    <input class="form-control" asp-for="Address">
+  </div>
+  
+  <button class="btn btn-info" type="submit">Create</button>
+</form>

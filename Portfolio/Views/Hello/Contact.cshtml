@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  
+   <nav class="navbar navbar-expand navbar-dark rounded bg-primary">
+    <div class="collapse navbar-collapse order-0 dual-collapse2" id="navbarSupportedContent">
+      
+      
+      
+      <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/wall">Projects</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/profile/{{user.id}}">Contact</a>
+              </li>
+        
+      </ul>
+
+    </div>
+   </nav>
+
+<h1 class="text-center">Contact Info</h1>
+
+<div style="background-color: transparent"  class="card text-white">
+        <div class="card-body text-center">
+          
+          <form action="/" method="post">
+           
+            <div class="input-group form-group mt-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Name</span>
+              </div>
+              <input type="text" name="name" class="form-control">
+            </div>
+
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Email</span>
+              </div>
+              <input type="password" name="email" class="form-control" >
+            </div>
+ <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Message Me</span>
+                <textarea></textarea>
+              </div>
+              <input type="password" name="email" class="form-control" >
+            </div>
+
+
+            <div class="form-group">
+              <input type="submit" name="btn" value="Submit" class="btn btn-outline-primary float-left login_btn">
+            </div>
+
+          </form>
+        </div>
+      </div>
+ 
+      
+</body>
+</html>

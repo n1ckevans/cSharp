@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "QuotingDojo";
+}
+
+<h1 class="text-center">Welcome to QuotingDojo</h1>
+
+<form asp-controller="Quoted" asp-action="Create">
+<div class="form-group">
+    <label asp-for="Name">
+      Your Name:
+    </label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Name"></span>
+    <input class="form-control" asp-for="Name">
+  </div>
+
+
+  <div class="form-group">
+    <label asp-for="Content">
+      Your Quote:
+    </label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Content"></span>
+    <input class="form-control" asp-for="Content">
+  </div>
+  <button class="btn btn-info" type="submit">Submit</button>
+
+</form>
